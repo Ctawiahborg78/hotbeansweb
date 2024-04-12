@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Bean.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT US</a></li>
+            <li><a href="Specification.html">SPECIFCATION</a></li>
+            <li><a href="Employee.html"> EMPLOYEE <a/></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="application.html">APPLICATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!------- about us content -------->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the world's leading web development company</h1>
+          <p>
+            Our ability to design user-friendly, aesthetically attractive websites has been demonstrated time and time again. We take great pride in becoming the top web development business in the world thanks to our knowledge and cutting-edge technologies.
+          </p>
+          <a
+            href="index.html"
+            class="hero-btn red-btn"
+            >EXPLORE NOW</a
+          >
+        </div>
+        <div class="about-col">
+          <img src="company.2.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Hot Beans Web is a web development company that is passionate about creating innovative and user-friendly web solutions. We believe in designing websites that are not only visually appealing but also simple to use and navigate. Our experienced web development team is dedicated to providing the highest level of service to our clients and ensuring that their websites reach their full potential. We are always on the lookout for new and talented web developers to join our team and assist us in providing quality solutions.
+      </p>
+      <p style="text-align: center;">
+        Follow us on social media:
+        <a href="https://twitter.com/hotbeansweb" target="_blank"
+          ><img src="twitter.png" alt="Twitter" style="width: 25px;"
+        /></a>
+  
+        <a href="https://www.facebook.com/hotbeansweb" target="_blank"
+          ><img src="facebook.png" alt="Facebook" style="width: 25px;"
+        /></a>
+  
+        <a href="https://www.instagram.com/hotbeansweb" target="_blank"
+          ><img src="Instagram.png" alt="Instagram" style="width: 35px;"
+        /></a>
+      </p>
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2023 Hotbeansweb. All Rights Reserved.
+        </p>
+    </section>
+    <!----JavaScript for toggle menu---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
